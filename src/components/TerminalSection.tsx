@@ -181,7 +181,7 @@ const TerminalSection = () => {
           </div>
 
           {/* Output */}
-          <div className="p-4 h-80 overflow-y-auto font-mono text-sm leading-relaxed">
+          <div ref={scrollRef} className="p-4 h-80 overflow-y-auto font-mono text-sm leading-relaxed">
             {lines.map((line, i) => (
               <div key={i} className={line.type === "input" ? "text-primary mt-2" : "text-muted-foreground whitespace-pre-wrap"}>
                 {line.text}
