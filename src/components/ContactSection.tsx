@@ -3,9 +3,9 @@ import { Mail, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const links = [
-  { icon: Mail, label: "Email", value: "saravana@example.com", href: "mailto:saravana@example.com" },
-  { icon: Github, label: "GitHub", value: "github.com/saravana", href: "https://github.com" },
-  { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/saravana", href: "https://linkedin.com" },
+  { icon: Mail, label: "Email", value: "saravanaofffcial0501@gmail.com", href: "mailto:saravanaofffcial0501@gmail.com" },
+  { icon: Github, label: "GitHub", value: "github.com/Saravana-sec", href: "https://github.com/Saravana-sec" },
+  { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/saravana101", href: "https://www.linkedin.com/in/saravana101/" },
 ];
 
 const ContactSection = () => {
@@ -60,7 +60,7 @@ const ContactSection = () => {
           transition={{ delay: 0.5 }}
         >
           <Button variant="neon" size="lg" asChild>
-            <a href="mailto:saravana@example.com">Say Hello</a>
+            <a href="mailto:saravanaofffcial0501@gmail.com">Say Hello</a>
           </Button>
         </motion.div>
       </div>
