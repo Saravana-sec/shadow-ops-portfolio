@@ -61,7 +61,7 @@ const ContactSection = () => {
           transition={{ delay: 0.5 }}
         >
           <Button variant="neon" size="lg" asChild>
-            <a href="mailto:saravanaofffcial0501@gmail.com">Say Hello</a>
+            <a href="https://www.linkedin.com/in/saravana101/" target="_blank" rel="noopener noreferrer">Say Hello</a>
           </Button>
         </motion.div>
       </div>
