@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin } from "lucide-react";
+import { Mail, Github, Linkedin, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const links = [
   { icon: Mail, label: "Email", value: "saravanaofffcial0501@gmail.com", href: "mailto:saravanaofffcial0501@gmail.com" },
   { icon: Github, label: "GitHub", value: "github.com/Saravana-sec", href: "https://github.com/Saravana-sec" },
   { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/saravana101", href: "https://www.linkedin.com/in/saravana101/" },
+  { icon: BookOpen, label: "Medium", value: "medium.com/@saroinaction2005", href: "https://medium.com/@saroinaction2005" },
 ];
 
 const ContactSection = () => {
