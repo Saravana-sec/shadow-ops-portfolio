@@ -96,9 +96,12 @@ const TerminalSection = () => {
   const [histIdx, setHistIdx] = useState(-1);
   const bottomRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (scrollRef.current) {
+      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+    }
   }, [lines]);
 
   const run = (cmd: string) => {
@@ -178,7 +181,7 @@ const TerminalSection = () => {
           </div>
 
           {/* Output */}
-          <div className="p-4 h-80 overflow-y-auto font-mono text-sm leading-relaxed">
+          <div ref={scrollRef} className="p-4 h-80 overflow-y-auto font-mono text-sm leading-relaxed">
             {lines.map((line, i) => (
               <div key={i} className={line.type === "input" ? "text-primary mt-2" : "text-muted-foreground whitespace-pre-wrap"}>
                 {line.text}
