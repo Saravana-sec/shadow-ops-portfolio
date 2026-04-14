@@ -218,12 +218,12 @@ const ResumeSection = () => {
                 {[
                   {
                     title: "Vice President — CyberCom Club",
-                    period: "Oct 2024 – Present",
+                    period: "Oct 2024 – Mar 2026",
                     desc: "Led 60+ engineers in scalable cybersecurity learning pipelines with SIEM platforms and threat-hunting labs.",
                   },
                   {
                     title: "Operations Associate — DedSec CTF Team",
-                    period: "Apr 2025 – Present",
+                    period: "Apr 2025 – Mar 2026",
                     desc: "Competed in national-level CTFs including Final Trace, ACNCTF '25, and Indian Army Terrier Cyber Quest.",
                   },
                   {
@@ -259,20 +259,12 @@ const ResumeSection = () => {
               <p className="text-sm text-muted-foreground mb-4">
                 Download the complete PDF with all details.
               </p>
-              <div className="flex gap-3 justify-center">
-                <Button variant="neon" asChild>
-                  <a href="/Saravana-resume.pdf" target="_blank" rel="noopener noreferrer">
-                    <FileText className="w-4 h-4" />
-                    View PDF
-                  </a>
-                </Button>
-                <Button variant="neon-outline" asChild>
-                  <a href="/Saravana-resume.pdf" download>
-                    <Download className="w-4 h-4" />
-                    Download
-                  </a>
-                </Button>
-              </div>
+              <Button variant="neon" asChild>
+                <a href="/Saravana-resume.pdf" download>
+                  <Download className="w-4 h-4" />
+                  Download Resume
+                </a>
+              </Button>
             </motion.div>
           </div>
         </div>
